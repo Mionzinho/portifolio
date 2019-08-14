@@ -1,0 +1,20 @@
+.ola{
+    position: relative;
+    left: 10%;
+    margin-top: 15%;
+    width: 50%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.titulo-destaque{
+    color: $cor-principal;
+    @extend %titulo;
+    
+}
+
+.subtitulo{
+    color: $cor-subtexto;
+    @extend %sub-titulo;
+}
+

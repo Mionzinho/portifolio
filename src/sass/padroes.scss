@@ -1,7 +1,21 @@
-h1{
-    color:red;
+// @import url('https://fonts.googleapis.com/css?family=Muli|Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:600,900|Roboto+Mono&display=swap');
+$cor-principal:#4EE981;
+$cor-fundo:#252627;
+$cor-nav:#2E2D2D;
+$cor-texto:rgb(245, 245, 245);
+$cor-subtexto:#6E798A;
+
+%texto {
+    font: 14px/24px 'Roboto Mono', sans-serif;
+    color: $cor-texto;  
 }
 
-.titulo{
-    color: tomato;
+%titulo {
+    font: 1000 40px/60px 'Muli', sans-serif;
 }
+  
+%sub-titulo {
+    font: 600 16px/16px 'Muli', sans-serif;
+}
+  

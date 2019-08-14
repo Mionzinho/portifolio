@@ -1,2 +1,50 @@
 @import './reset.scss';
 @import './padroes.scss';
+@import './menu.scss';
+@import './grid.scss';
+@import './ola.scss';
+@import './souweb.scss';
+
+
+
+body{
+    background: $cor-fundo;
+    background-image: url("../img/fundo.png");
+    background-repeat: no-repeat;
+    background-position:right 30%;
+    background-size: 60%;
+}
+
+.container h2+p{
+    margin: 10px 0 0 ;
+}
+
+.container p+button{
+    margin:30px 0 0 0;
+}
+
+h2{
+    color:$cor-texto;
+    @extend %titulo;
+}
+
+
+button{
+    border: solid 2px $cor-principal;
+    border-radius: 5px;
+    background: transparent;
+    color: $cor-principal;
+    @extend %sub-titulo;
+    padding:10px 40px;
+    // cursor: pointer;
+}
+
+button:hover{
+    background: $cor-principal;
+    color: $cor-fundo;
+    
+}
+
+
+
+
