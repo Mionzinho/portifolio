@@ -1,10 +1,7 @@
 import React from 'react'
 
-const c = () => {
+export default function Botao() {
   return (
     <button href="#">FALE COMIGO</button>
   )
 }
-
-export default c
-  

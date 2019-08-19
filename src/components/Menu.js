@@ -5,9 +5,7 @@ import { faHome, faCode, faCog, faEnvelope} from "@fortawesome/free-solid-svg-ic
 import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-
-
-const m = () => {
+export default function Menu() {
     return (
       <nav>
         <a href="#"> <img src={logo} alt="logo"/></a>
@@ -26,6 +24,3 @@ const m = () => {
       </nav>
     )
 }
-  
-export default m
-  
