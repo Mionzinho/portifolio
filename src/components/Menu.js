@@ -1,29 +1,28 @@
 import React from 'react'
-import logo from '../img/logo.png';
-import home from '../img/home.png';
-import code from '../img/code.png';
-import skill from '../img/skill.png';
-import contato from '../img/contato.png';
-import insta from '../img/instagram.png';
-import git from '../img/github.png';
-import linkedin from '../img/linkedin.png';
+import logo from '../img/logo.png'
+// get our fontawesome imports
+import { faHome, faCode, faCog, faEnvelope} from "@fortawesome/free-solid-svg-icons"
+import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+
 
 const m = () => {
     return (
       <nav>
-           <a href="#"> <img src={logo} alt="logo"/></a>
-           
-            <ul className="linksinternos">
-                <a href="/"><li><img src={home} alt="home"/></li></a>
-                <a href="/projetos"><li><img src={code} alt="meus projetos"/></li></a>
-                <a href="#"><li><img src={skill} alt="minhas habilidades"/></li></a>
-                <a href="#"><li><img src={contato} alt="contato"/></li></a>
-            </ul>
-            <ul className="linksexternos">
-             <a href="#"><li><img src={insta} alt="instagram"/></li></a>
-             <a href="#"><li><img src={git} alt="github"/></li></a>
-             <a href="#"><li><img src={linkedin} alt="linkedin"/></li></a>
-            </ul>
+        <a href="#"> <img src={logo} alt="logo"/></a>
+        
+        <ul className="linksinternos">
+          <a href="/"><li><FontAwesomeIcon icon={faHome} size="2x" /></li></a>
+          <a href="/Skill"><FontAwesomeIcon icon={faCode} size="2x" /><li></li></a>
+          <a href="/Projetos"><FontAwesomeIcon icon={faCog} size="2x" /><li></li></a>
+          <a href="/Contato"><FontAwesomeIcon icon={faEnvelope} size="2x" /><li></li></a>
+        </ul>
+        <ul className="linksexternos">
+          <a href="#"><li><FontAwesomeIcon icon={faInstagram} size="2x" /></li></a>
+          <a href="#"><li><FontAwesomeIcon icon={faLinkedin} size="2x" /></li></a>
+          <a href="#"><li><FontAwesomeIcon icon={faGithub} size="2x" /></li></a>    
+        </ul>
       </nav>
     )
 }
