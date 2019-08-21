@@ -23,12 +23,6 @@ body{
     margin:30px 0 0 0;
 }
 
-h2{
-    color:$cor-texto;
-    @extend %titulo;
-}
-
-
 button{
     border: solid 2px $cor-principal;
     border-radius: 5px;

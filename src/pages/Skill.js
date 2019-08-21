@@ -10,7 +10,7 @@ const App = () => {
     <>
       <div className="container">
         <Menu></Menu>
-        <h2>macibha e skill</h2>
+        <h2 className="titulo-alternativo">Habilidades & Experiencias</h2>
       </div> 
     </>
     )

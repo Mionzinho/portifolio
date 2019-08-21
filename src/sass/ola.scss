@@ -6,7 +6,10 @@
     flex-wrap: nowrap;
     white-space: nowrap;
 }
-
+.ola h2 {
+    color:$cor-texto;
+    @extend %titulo;
+}
 .titulo-destaque{
     color: $cor-principal;
     @extend %titulo;

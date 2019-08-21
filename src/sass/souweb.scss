@@ -3,7 +3,9 @@
     flex-wrap: nowrap;
     align-content: flex-end;
 }
-
+.souweb a {
+    color: $cor-texto;
+}
 .souweb p + h3{
     margin: 30% 0 0 0;
 
