@@ -8,8 +8,8 @@ import Menu from '../components/Menu'
 // 
 
 const App = ({ projetos }) => {
-  return (
-    <>
+  return ( 
+    <>    
       <div className="container">
         <Menu></Menu>
         <Ola></Ola>
@@ -30,6 +30,7 @@ const App = ({ projetos }) => {
     )
 }
 
-export default connect({
-	projetos: state.projetos
+export default
+connect({
+  projetos: state.projetos
 })(App)

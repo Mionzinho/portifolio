@@ -1,10 +1,10 @@
+
 nav{
     width: 90px;
     background: $cor-nav;
     position: fixed;
     height: 100vh;
     text-align: center;
-    
 }
 
 .linksinternos{
@@ -12,12 +12,15 @@ nav{
     text-align: center;
     position: absolute;
     height: 210px;
-    top: 50%;
+    top: 55%;
     margin-top: -120px;
     width: 100%;
 }
-.linksinternos a+a {
-    margin: 5%;
+.linksinternos a {
+    color: $cor-texto;
+}
+.linksinternos li+li {
+    margin: 40%;
 }
 
 .linksexternos{
@@ -31,9 +34,15 @@ nav{
     margin: 0;
 }
 
+.linksexternos a {
+    color: $cor-texto;
+}
+.linksexternos li + li{
+    top: 12%;
+}
+
 ul + ul{
     padding: auto;
     margin: 40% 0 0 0;
-
 }
 

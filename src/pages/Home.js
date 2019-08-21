@@ -15,7 +15,7 @@ const App = () => {
           <p className="texto">Sou um <b>Web Developer</b>, amante do <b>automobilismo</b>,<br></br>
                               praticante de <b>musculação</b> e <b>positivista</b> movido a<br></br>
                               café e resiliência.</p>
-          <h3 className="texto">VEJA MEUS PROJETOS</h3>           
+          <h3 className="texto"><a href="#">VEJA MEUS PROJETOS</a></h3>           
         </div>
       </div> 
     </>

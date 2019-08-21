@@ -11,15 +11,15 @@ export default function Menu() {
         <a href="#"> <img src={logo} alt="logo"/></a>
         
         <ul className="linksinternos">
-          <a href="/"><li><FontAwesomeIcon icon={faHome} size="2x" /></li></a>
-          <a href="/Skill"><FontAwesomeIcon icon={faCode} size="2x" /><li></li></a>
-          <a href="/Projetos"><FontAwesomeIcon icon={faCog} size="2x" /><li></li></a>
-          <a href="/Contato"><FontAwesomeIcon icon={faEnvelope} size="2x" /><li></li></a>
+            <li><a href="/"><FontAwesomeIcon icon={faHome} size="lg" /></a></li>
+            <li><a href="/Skill"><FontAwesomeIcon icon={faCode} size="lg" /></a></li>
+            <li><a href="/Projetos"><FontAwesomeIcon icon={faCog} size="lg" /></a></li>
+            <li><a href="/Contato"><FontAwesomeIcon icon={faEnvelope} size="lg"/></a></li>
         </ul>
         <ul className="linksexternos">
-          <a href="#"><li><FontAwesomeIcon icon={faInstagram} size="2x" /></li></a>
-          <a href="#"><li><FontAwesomeIcon icon={faLinkedin} size="2x" /></li></a>
-          <a href="#"><li><FontAwesomeIcon icon={faGithub} size="2x" /></li></a>    
+          <li><a href="#"><FontAwesomeIcon icon={faInstagram} size="sm" /></a></li>
+          <li><a href="#"><FontAwesomeIcon icon={faLinkedin} size="sm" /></a></li>
+          <li><a href="#"><FontAwesomeIcon icon={faGithub} size="sm" /></a></li>    
         </ul>
       </nav>
     )
