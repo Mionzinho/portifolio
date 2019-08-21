@@ -30,7 +30,8 @@ const App = ({ projetos }) => {
     )
 }
 
-export default
-connect({
+const maps = state => ({
   projetos: state.projetos
-})(App)
+})
+
+export default connect(maps)(App)
