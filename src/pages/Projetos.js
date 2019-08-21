@@ -1,19 +1,27 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
 
-const App = ({ projetos }) => {
+export default () => {
+  const projetos = useSelector(state => state.projetos)
+  
   return ( 
     <>    
       <div className="container">
         <Menu></Menu>
-      </div>
+        <div className="souweb">
+          <h3 className="texto">PROJETOS</h3>
+          <ul>
+            {projetos.map(item => (
+              <>
+                <li>{item.nome}</li>
+                <li>{item.foto}</li>
+                <li>{item.link}</li>
+              </>
+            ))}
+          </ul>         
+        </div>
+      </div> 
     </>
-    )
+  )
 }
-
-const maps = state => ({
-  projetos: state.projetos
-})
-
-export default connect(maps)(App)
