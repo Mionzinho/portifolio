@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function Menu() {
     return (
       <nav>
-        <a href="#"> <img src={logo} alt="logo"/></a>
+        <a href="/"> <img src={logo} alt="logo"/></a>
         
         <ul className="linksinternos">
             <li><a href="/"><FontAwesomeIcon icon={faHome} size="lg" /></a></li>
@@ -17,9 +17,9 @@ export default function Menu() {
             <li><a href="/Contato"><FontAwesomeIcon icon={faEnvelope} size="lg"/></a></li>
         </ul>
         <ul className="linksexternos">
-          <li><a href="#"><FontAwesomeIcon icon={faInstagram} size="sm" /></a></li>
-          <li><a href="#"><FontAwesomeIcon icon={faLinkedin} size="sm" /></a></li>
-          <li><a href="#"><FontAwesomeIcon icon={faGithub} size="sm" /></a></li>    
+          <li><a href="https://www.instagram.com/marsolinha_/"><FontAwesomeIcon icon={faInstagram} size="sm" /></a></li>
+          <li><a href="https://www.google.com"><FontAwesomeIcon icon={faLinkedin} size="sm" /></a></li>
+          <li><a href="https://github.com/Mionzinho"><FontAwesomeIcon icon={faGithub} size="sm" /></a></li>    
         </ul>
       </nav>
     )

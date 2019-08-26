@@ -1,19 +1,27 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
 
-// import logo from './logo.svg';
-//<img src={logo} className="App-logo" alt="logo" />
-// 
+export default () => {
+  const skill = useSelector(state => state.skill)
 
-const App = () => {
   return (
     <>
       <div className="container">
         <Menu></Menu>
-        <h2 className="titulo-alternativo">Habilidades & Experiencias</h2>
+        <div className="habilidades">
+          <ul>
+            {skill.map(skill => (
+              <>
+                <li>{skill.nome}</li>
+                <li>{skill.img}</li>
+              </>
+              ))} 
+          </ul>
+        </div>
+        <h2 className="titulo-alternativo">Habilidades & <br></br>Experiências</h2>
       </div> 
     </>
     )
 }
 
-export default App

@@ -1,19 +1,21 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
 
-// import logo from './logo.svg';
-//<img src={logo} className="App-logo" alt="logo" />
-// 
+export default () => {
+  const contato = useSelector(state => state.contato)
 
-const App = () => {
   return (
     <>
       <div className="container">
         <Menu></Menu>
-        <h2>smile bitch</h2>
+        <ul>
+          <li>{contato.nome}</li>
+          <li>{contato.email}</li>
+          <li>{contato.mensagem}</li>
+        </ul>
       </div> 
     </>
     )
 }
 
-export default App
