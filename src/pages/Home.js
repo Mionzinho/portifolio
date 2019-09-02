@@ -10,8 +10,8 @@ export default function home() {
         <Menu></Menu>
         <Ola></Ola>
         <div className="souweb">
-          <p className="texto">Sou um <b>Web Developer</b>, amante do <b>automobilismo</b>,<br></br>
-                              praticante de <b>musculação</b> e <b>positivista</b> movido a<br></br>
+          <p className="texto">Sou um <b>Web Developer</b>, amante do <b>automobilismo</b>,<br/>
+                              praticante de <b>musculação</b> e <b>positivista</b> movido a<br/>
                               café e resiliência.</p>
           <h3 className="texto">VEJA MEUS PROJETOS</h3>           
         </div>

@@ -1,21 +1,19 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
+import Formulario from '../components/Formulario';
+import Pessoais from '../components/Pessoais';
 
-export default () => {
-  const contato = useSelector(state => state.contato)
+
+export default function contato() {
 
   return (
-    <>
-      <div className="container">
+      <div className="container-column">
         <Menu></Menu>
-        <ul>
-          <li>{contato.nome}</li>
-          <li>{contato.email}</li>
-          <li>{contato.mensagem}</li>
-        </ul>
+        <div className="conteudo-contato">
+        <Pessoais></Pessoais>
+        <Formulario></Formulario>
+        </div>
       </div> 
-    </>
     )
 }
 

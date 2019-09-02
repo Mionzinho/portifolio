@@ -6,6 +6,9 @@ nav{
     height: 100vh;
     text-align: center;
 }
+nav :hover{
+    color:$cor-principal;
+}
 
 .linksinternos{
     display: block;
