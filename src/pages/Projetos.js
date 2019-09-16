@@ -1,13 +1,13 @@
-  
+
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
 
 export default () => {
   const projetos = useSelector(state => state.projetos)
-  
-  return ( 
-    <>    
+
+  return (
+    <>
       <div className="container">
         <Menu></Menu>
         <div className="souweb">
@@ -20,9 +20,9 @@ export default () => {
                 <li>{item.link}</li>
               </>
             ))}
-          </ul>         
+          </ul>
         </div>
-      </div> 
+      </div>
     </>
   )
 }
