@@ -1,10 +1,14 @@
 import React from 'react'
 import Botao from '../components/Botao'
+import styled, { keyframes } from 'styled-components'
+import { bounce } from 'react-animations'
+
+const Bounce = styled.div`animation:2s ${keyframes`${bounce}`} `
 
 const c = () => {
     return (
         <div className="ola">
-          <h2>Olá,<br/>Sou o <span className="titulo-destaque">Vinicius</span>,<br/>Front-end Web developer.</h2>
+          <Bounce><h2>Olá,<br/>Sou o <span className="titulo-destaque">Vinicius</span>,<br/>Front-end Web developer.</h2></Bounce>
           <p className="subtitulo">HTML5 & CSS3 / JS / entre outros...</p>
           <Botao></Botao>
         </div>

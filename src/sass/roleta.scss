@@ -1,0 +1,52 @@
+
+body {
+    background: #000;
+  }
+  .outerspace {
+    background: #000;
+    margin: auto;
+    height: 480px;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+  }
+  .planet {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+  
+  .satellite {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: silver;
+    animation: circle 6s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    transform-origin: 200px center;
+  }
+
+  .satelite + .satelite {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: tomato;
+    animation: circle 7s infinite linear;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    margin-left: -200px;
+    transform-origin: 200px center;
+
+  }
+  @keyframes circle { to { transform: rotate(1turn); } }
+  @keyframes sideToSide { to { transform: translateX(400px); } }
