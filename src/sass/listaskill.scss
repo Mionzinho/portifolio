@@ -46,11 +46,11 @@ $largura: 160px;
         width: $largura;
         height: 80px;
         position: absolute;
-        -webkit-animation: rotating 80s reverse linear infinite;
-        -moz-animation: rotating 80s reverse linear infinite;
-        -ms-animation: rotating 80s reverse linear infinite;
-        -o-animation: rotating 80s reverse linear infinite;
-        animation: rotating 80s reverse linear infinite;
+        -webkit-animation: rotating 20s reverse linear infinite;
+        -moz-animation: rotating 20s reverse linear infinite;
+        -ms-animation: rotating 20s reverse linear infinite;
+        -o-animation: rotating 20s reverse linear infinite;
+        animation: rotating 20s reverse linear infinite;
 
         &:nth-child(1) {
             top: 0px;
