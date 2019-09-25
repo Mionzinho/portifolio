@@ -10,8 +10,10 @@ export default () => {
     <>
       <div className="container">
         <Menu></Menu>
+        <div className="container-enter">
         <Listaskill></Listaskill>
         <h2 className="titulo-alternativo">Habilidades & <br/>Experiências</h2>
+        </div>
       </div> 
     </>
     )

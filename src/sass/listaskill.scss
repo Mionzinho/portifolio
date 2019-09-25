@@ -1,4 +1,5 @@
-$largura: 160px;
+$largura: 200px;
+ 
 @-webkit-keyframes rotating {
     from {
         -webkit-transform: rotate(0deg);
@@ -28,20 +29,28 @@ $largura: 160px;
     }
 }
 
+ul:hover{
+    animation-play-state: paused;
+    
+}
+ ul:hover> li{
+    animation-play-state: paused;
+}
+
 .listaskill {
-    position: relative;
-    height: 300px;
-    background: red;
-    width: 300px;
-    border-radius: 300px;
-    left: 200px;
-    top: 40px;
+    display: flex;
+    justufy-content:center;
+    height: 400px;
+    background: transparent;
+    width: 400px;
+    border-radius: 400px;
     -webkit-animation: rotating 20s linear infinite;
     -moz-animation: rotating 20s linear infinite;
     -ms-animation: rotating 20s linear infinite;
     -o-animation: rotating 20s linear infinite;
     animation: rotating 20s linear infinite;
-
+    
+    
     li {
         width: $largura;
         height: 80px;
@@ -53,9 +62,9 @@ $largura: 160px;
         animation: rotating 20s reverse linear infinite;
 
         &:nth-child(1) {
-            top: 0px;
+            top: 8.3%;
             margin-top: -40px;
-            left: 50%;
+            right:0px;
             margin-left: $largura/-2;
         }
         &:nth-child(2) {
@@ -65,20 +74,38 @@ $largura: 160px;
             margin-right: $largura/-2;
         }
         &:nth-child(3) {
-            bottom: 0px;
-            margin-bottom: -40px;
-            left: 50%;
+            bottom: -8.3%;
+            right: 0px;
             margin-left: $largura/-2;
         }
         &:nth-child(4) {
+            left: -0px;
+            bottom: -8.3%;
+            margin-top: -40px;
+            margin-right: $largura/-2;
+        }
+        &:nth-child(5) {
             left: 0;
             top: 50%;
             margin-top: -40px;
             margin-left: $largura/-2;
         }
+        &:nth-child(6) {
+            top: 8.3%;
+            margin-top: -40px;
+            left:0px;
+            margin-right: $largura/-2;
+        }
+        span{
+            color:$cor-texto;
+            @extend %texto; 
+            font-size:22px;
+            
+        }
         img {
-            width: $largura;
+            width: 60px;
             height: 80px;
         }
+ 
     }
 }
