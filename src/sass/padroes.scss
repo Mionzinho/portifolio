@@ -5,6 +5,11 @@ $cor-fundo:#252627;
 $cor-nav:#2E2D2D;
 $cor-texto:rgb(245, 245, 245);
 $cor-subtexto:#6E798A;
+//margens
+$h2-margin: 20% 6% 0 10%;
+
+$largura: 200px;
+
 
 %texto {
     font: 14px/24px 'Roboto Mono', sans-serif;
@@ -21,5 +26,6 @@ $cor-subtexto:#6E798A;
 
 .titulo-alternativo{
     font: 500 40px/40px 'Muli', sans-serif;
-    color: $cor-principal
+    color: $cor-principal;
+    margin: $h2-margin;
 }

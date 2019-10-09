@@ -9,11 +9,9 @@ export default () => {
   return (
     <>
       <div className="container">
-        <Menu></Menu>
-        <div className="container-enter">
         <Listaskill></Listaskill>
+        <Menu></Menu>
         <h2 className="titulo-alternativo">Habilidades & <br/>Experiências</h2>
-        </div>
       </div> 
     </>
     )

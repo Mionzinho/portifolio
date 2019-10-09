@@ -12,8 +12,8 @@ export default function Menu() {
         
         <ul className="linksinternos">
             <li><a href="/"><FontAwesomeIcon icon={faHome} size="lg" /></a></li>
-            <li><a href="/Skill"><FontAwesomeIcon icon={faCode} size="lg" /></a></li>
-            <li><a href="/Projetos"><FontAwesomeIcon icon={faCog} size="lg" /></a></li>
+            <li><a href="/Projetos"><FontAwesomeIcon icon={faCode} size="lg" /></a></li>
+            <li><a href="/Skill"><FontAwesomeIcon icon={faCog} size="lg" /></a></li>
             <li><a href="/Contato"><FontAwesomeIcon icon={faEnvelope} size="lg"/></a></li>
         </ul>
         <ul className="linksexternos">

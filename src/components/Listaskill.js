@@ -12,14 +12,13 @@ export default () => {
   // const skill = useSelector(state => state.skill)
 
   return (
-    <ul className="listaskill">
-      <li><img src={SassImg} alt="nodejs" /><span>Sass</span></li>
-      <li><img src={JqueyImg} alt="nodejs" /><span>Jquery</span></li>
-      <li><img src={JavaImg} alt="nodejs" /><span>JavaScript</span></li>
-      <li><img src={ReactImg} alt="nodejs" /><span>React</span></li>
-      <li><img src={FirebaseImg} alt="nodejs" /><span>Firebase</span></li>
-      <li><img src={NodeImg} alt="nodejs" /><span>Node</span></li>
-
+    <ul className="listaroleta">
+      <li className="itemskills"><img src={SassImg} alt="nodejs" /><span>Sass</span></li>
+      <li className="itemskills"><img src={JqueyImg} alt="nodejs" /><span>Jquery</span></li>
+      <li className="itemskills"><img src={JavaImg} alt="nodejs" /><span>JavaScript</span></li>
+      <li className="itemskills"><img src={ReactImg} alt="nodejs" /><span>React</span></li>
+      <li className="itemskills"><img src={FirebaseImg} alt="nodejs" /><span>Firebase</span></li>
+      <li className="itemskills"><img src={NodeImg} alt="nodejs" /><span>Node</span></li>
 
       {/* {skill.map(skill => (
         <>
@@ -27,7 +26,9 @@ export default () => {
           <li>{skill.img}</li>
         </>
       ))} */}
+
     </ul>
+
   )
 }
 

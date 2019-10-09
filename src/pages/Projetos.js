@@ -1,27 +1,19 @@
 
 import React from 'react'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 import Menu from '../components/Menu'
+import ListaProjetos from '../components/ListaProjetos'
+
 
 export default () => {
-  const projetos = useSelector(state => state.projetos)
+  // const projetos = useSelector(state => state.projetos)
 
   return (
     <>
       <div className="container">
         <Menu></Menu>
-        <div className="souweb">
-          <h3 className="texto">PROJETOS</h3>
-          <ul>
-            {projetos.map(item => (
-              <>
-                <li>{item.nome}</li>
-                <li>{item.foto}</li>
-                <li>{item.link}</li>
-              </>
-            ))}
-          </ul>
-        </div>
+        <ListaProjetos></ListaProjetos>
+        {/* <h2 className="titulo-alternativo">Meus Projetos</h2> */}
       </div>
     </>
   )
