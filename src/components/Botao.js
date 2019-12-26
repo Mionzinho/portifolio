@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Botao() {
   return (
-    <button href="#">FALE COMIGO</button>
+    <a href="/Contato"><button>FALE COMIGO</button></a>
   )
 }

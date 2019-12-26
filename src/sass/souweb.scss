@@ -6,6 +6,9 @@
 .souweb a {
     color: $cor-texto;
 }
+.souweb :hover {
+    color: $cor-principal;
+}
 .souweb p + h3{
     margin: 30% 0 0 0;
 

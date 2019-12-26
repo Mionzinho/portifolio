@@ -1,6 +1,19 @@
-.itemprojetos{
-    width: $largura;
-    height: 80px;
+.listaProjeto {
+    margin: 10% $larguraProjeto/-2 0 0;
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    background: transparent;
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
+
+}
+
+.itemProjetos {
+    width: $larguraProjeto;
     position: absolute;
     -webkit-animation: rotating 20s reverse linear infinite;
     -moz-animation: rotating 20s reverse linear infinite;
@@ -9,28 +22,27 @@
     animation: rotating 20s reverse linear infinite;
     
     &:nth-child(1) {
-        top:0 ;
-        margin-top: -40px;
-        right: 0px;
-        margin-left: $largura/-2;
+        margin-top: $alturaProjeto/-2;
+        right: 0;
+        position: absolute;
     }
-   
-    
-    span{
-        color:$cor-texto;
-        @extend %texto; 
-        font-size: 22px;
-        position: relative;
-        left: 5px;
-        bottom: 25px; 
+    &:nth-child(2) {
+        top: 50%;
+        margin-right: $larguraProjeto;
+        margin-left: $larguraProjeto/-2;
+        position: absolute;
 
-        &:hover{
-            color:$cor-principal;
-        }
     }
+    &:nth-child(3) {
+        bottom: 0;
+        margin-bottom:  $alturaProjeto/-2;
+        right: 0;
+    }   
+   
     img {
-        width: 60px;
-        height: 80px;
+        width: 309px;
+        height: 159px;
+      
     }
-    
 }
+

@@ -5,10 +5,16 @@ nav{
     position: fixed;
     height: 100vh;
     text-align: center;
+    
+    img{
+        width: 50%;
+        height: 15%;
+    }
 }
 nav :hover{
     color:$cor-principal;
 }
+
 
 .linksinternos{
     display: block;
