@@ -1,6 +1,7 @@
 import React from 'react'
 import Ola from '../components/Ola'
 import Menu from '../components/Menu'
+import SouWeb from '../components/SouWeb'
 
 
 export default function home() {
@@ -10,13 +11,8 @@ export default function home() {
       <div className="container">
         <Menu></Menu>
         <Ola></Ola> 
-        <div className="souweb">
-          <p className="texto">Sou um <b>Web Developer</b>, amante do <b>automobilismo</b>,<br/>
-                              praticante de <b>musculação</b> e <b>positivista</b> movido a<br/>
-                              café e resiliência.</p>
-          <br/>
-          <a href="/Projetos"><h3 className="texto">VEJA MEUS PROJETOS</h3></a>
-        </div>
+        <SouWeb></SouWeb>
+        
       </div> 
     </>
     )

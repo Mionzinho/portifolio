@@ -2,6 +2,10 @@
     margin: $h2-margin;
     flex-wrap: nowrap;
     align-content: flex-end;
+
+    @media screen and (max-width: $tablet) {
+       justify-content: center;
+      }
 }
 .souweb a {
     color: $cor-texto;

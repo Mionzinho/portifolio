@@ -1,10 +1,15 @@
 .ola{
+    flex: 1;
     position: relative;
     left: 10%;
     margin-top: 18%;
     width: 50%;
     flex-wrap: nowrap;
     white-space: nowrap;
+
+    @media screen and (max-width: $tablet) {
+        align-content: center;
+    }
 }
 .ola h2 {
     color:$cor-texto;
