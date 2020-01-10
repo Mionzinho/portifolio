@@ -12,7 +12,6 @@ export default function home() {
         <Menu></Menu>
         <Ola></Ola> 
         <SouWeb></SouWeb>
-        
       </div> 
     </>
     )
