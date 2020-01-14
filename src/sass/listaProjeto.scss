@@ -1,4 +1,5 @@
 .listaProjeto {
+    display: flex;
     margin: 10% $larguraProjeto/-2 0 0;
     height: 500px;
     width: 500px;
@@ -13,6 +14,7 @@
 }
 
 .itemProjetos {
+    display: flex;
     width: $larguraProjeto;
     position: absolute;
     -webkit-animation: rotating 20s reverse linear infinite;

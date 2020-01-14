@@ -7,13 +7,10 @@
     flex-wrap: nowrap;
     white-space: nowrap;
 
-    @media screen and (max-width: $tablet) {
-        margin: 10% 0% 0% 15%;;
+    h2 {
+        color:$cor-texto;
+        @extend %titulo;
     }
-}
-.ola h2 {
-    color:$cor-texto;
-    @extend %titulo;
 }
 .titulo-destaque{
     color: $cor-principal;
@@ -26,3 +23,17 @@
     @extend %sub-titulo;
 }
 
+
+@media screen and (max-width: $tablet) {
+    .ola{
+        margin: 10% 0% 0% 15%;
+        flex-wrap: wrap;
+        white-space: pre-wrap;
+    }
+}
+@media screen and (max-width: $mobile) {
+    .ola{
+        margin: 40% 0 0 0 ;
+        justify-content: flex-start;
+    }
+}

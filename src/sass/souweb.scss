@@ -5,8 +5,12 @@
 
     @media screen and (max-width: $tablet) {
         margin: 10% 0% 0% 25%;;
-
       }
+
+      @media screen and (max-width: $mobile) {
+        margin: 20% 0% 2% 10%;  
+        flex-wrap: wrap;
+    }  
 }
 .souweb a {
     color: $cor-texto;

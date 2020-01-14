@@ -1,17 +1,19 @@
 nav{
+    display: flex;
+    flex-wrap: wrap; 
     width: 90px;
     background: $cor-nav;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 
     img{
-        width: 50%;
-        height: 15%;
+        margin: 0 0 0 20px;
     }
-}
-nav :hover{
-    color:$cor-principal;
+
+    :hover{
+        color:$cor-principal;
+    } 
 }
 
 
@@ -23,12 +25,13 @@ nav :hover{
     top: 55%;
     margin-top: -120px;
     width: 100%;
-}
-.linksinternos a {
-    color: $cor-texto;
-}
-.linksinternos li+li {
-    margin: 40%;
+
+    a {
+       color: $cor-texto;
+   }
+    li+li {
+       margin: 40%;
+   } 
 }
 
 .linksexternos{
@@ -40,13 +43,13 @@ nav :hover{
     list-style: none;
     text-align: center;
     margin: 0;
-}
-
-.linksexternos a {
-    color: $cor-texto;
-}
-.linksexternos li + li{
-    top: 12%;
+    
+     a {
+        color: $cor-texto;
+    }
+     li + li{
+        top: 12%;
+    }
 }
 
 ul + ul{
@@ -54,3 +57,36 @@ ul + ul{
     margin: 40% 0 0 0;
 }
 
+@media screen and (max-width: $mobile) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        
+        ul li {
+            margin: 0 5% 0 5%
+        }
+
+    }
+    .linksinternos{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        top: none;
+        margin-top: auto;
+        margin-left: 25%;
+        
+        li+li{
+            margin: 0 5% 0 5%;
+        }
+
+
+    }
+    .linksexternos{
+        display: none;
+    }
+}
