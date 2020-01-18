@@ -59,6 +59,7 @@ ul + ul{
 
 @media screen and (max-width: $mobile) {
     nav{
+        position: fixed;
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -9,9 +9,9 @@ export default () => {
   return (
     <>
       <div className="container">
+        <h2 className="titulo-alternativo tituloSkill">Habilidades & <br/>Experiências</h2>
         <Listaskill></Listaskill>
         <Menu></Menu>
-        <h2 className="titulo-alternativo">Habilidades & <br/>Experiências</h2>
       </div> 
     </>
     )

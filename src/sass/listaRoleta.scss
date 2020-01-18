@@ -40,3 +40,16 @@
     -o-animation: rotating 20s linear infinite;
     animation: rotating 20s linear infinite;
 }
+
+@media screen and ( max-width: $tablet ){
+    .listaroleta{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:30% ;
+    }
+}
+@media screen and ( max-width: $mobile ){
+    .listaroleta{
+        margin: 120% 0 0 0;
+    }
+}

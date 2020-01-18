@@ -39,3 +39,17 @@ $mobile: 425px;
 *img{
     display: flex;
 }
+
+
+@media screen and ( max-width: $tablet ){
+    .titulo-alternativo{
+        align-self: center;
+        margin:5% 0 10% 0;
+    }
+}
+@media screen and ( max-width: $mobile ){
+    .titulo-alternativo{
+        margin: 40% 0 15% 0;
+        
+    }
+}
