@@ -18,9 +18,9 @@ const Routes = () => {
     <Router history={History}>
       <Switch>
         <Route exact path='/' render={() => <Home />} />
-        <Route exact path='/Projetos' render={() => <Projetos />} />
-        <Route exact path='/Skill' render={() => <Skill />} />
-        <Route exact path='/Contato' render={() => <Contato />} />
+        <Route exact path='/projetos' render={() => <Projetos />} />
+        <Route exact path='/skill' render={() => <Skill />} />
+        <Route exact path='/contato' render={() => <Contato />} />
         <Redirect from='*' to='/' />
       </Switch>
     </Router>

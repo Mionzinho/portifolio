@@ -50,7 +50,7 @@
     }
 }
 
-@media screen and ( max-width: $tablet ){
+@media only screen and ( max-width: $tablet ){
     .tituloProjeto{
         align-self: center;
         margin:5% 0 10% 0;
@@ -100,7 +100,7 @@
    
     }
 }
-@media screen and ( max-width: $mobile ){
+@media only screen and ( max-width: $mobile ){
     .tituloProjeto{
         margin: 40% 0 15% 0;
     }

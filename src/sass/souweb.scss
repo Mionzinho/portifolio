@@ -3,11 +3,11 @@
     flex-wrap: nowrap;
     align-content: flex-end;
 
-    @media screen and (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
         margin: 10% 0% 0% 25%;;
       }
 
-      @media screen and (max-width: $mobile) {
+      @media only screen and (max-width: $mobile) {
         margin: 20% 0% 2% 10%;  
         flex-wrap: wrap;
     }  

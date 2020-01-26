@@ -24,14 +24,14 @@
 }
 
 
-@media screen and (max-width: $tablet) {
+@media only screen and (max-width: $tablet) {
     .ola{
         margin: 10% 0% 0% 15%;
         flex-wrap: wrap;
         white-space: pre-wrap;
     }
 }
-@media screen and (max-width: $mobile) {
+@media only screen and (max-width: $mobile) {
     .ola{
         margin: 40% 0 0 0 ;
         justify-content: flex-start;
