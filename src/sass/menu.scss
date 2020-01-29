@@ -57,9 +57,9 @@ ul + ul{
     margin: 40% 0 0 0;
 }
 
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: $mobile), screen and (max-height: $mobile)  {
     nav{
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: row;
         align-items: center;

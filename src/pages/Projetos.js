@@ -11,8 +11,8 @@ export default () => {
   return (
     <>
       <div className="container">
-        <h2 className="titulo-alternativo tituloProjeto">Meus Projetos</h2>  
         <Menu></Menu>
+        <h2 className="titulo-alternativo tituloProjeto">Meus Projetos</h2>  
         <ListaProjetos></ListaProjetos>
       </div>
     </>

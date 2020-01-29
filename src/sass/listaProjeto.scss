@@ -1,3 +1,4 @@
+
 .listaProjeto {
     display: flex;
     margin: 10% $larguraProjeto/-2 0 0;
@@ -52,14 +53,15 @@
 
 @media only screen and ( max-width: $tablet ){
     .tituloProjeto{
-        align-self: center;
-        margin:5% 0 10% 0;
+        text-align: center;
+        flex: 1 1 ;    
+        margin-left: 2%;
     }
 
     .listaProjeto{
-        margin: auto;
-        height: auto;
-        width: auto;
+        display: flex;
+        flex: 1;
+        margin: 0 30%;
         border-radius: unset;
         -webkit-animation: pause;
         -moz-animation: pause;
@@ -76,8 +78,8 @@
         -o-animation: pause;
         width:auto;
         position: relative;
-         animation: pause;
-         margin-bottom: 5%;
+        animation: pause;
+        margin-bottom: 5%;
 
          
     &:nth-child(1) {
@@ -100,9 +102,13 @@
    
     }
 }
+
 @media only screen and ( max-width: $mobile ){
     .tituloProjeto{
+        position: relative;
         margin: 40% 0 15% 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }

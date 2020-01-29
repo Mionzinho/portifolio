@@ -12,10 +12,10 @@ export default function Menu() {
         <a href="/"> <img src={logo} alt="logo"/></a>
         
         <ul className="linksinternos">
-            <li><a href="/"><FontAwesomeIcon icon={faHome} size="lg" /></a></li>
+            <li><Link to="/"><FontAwesomeIcon icon={faHome} size="lg" /></Link></li>
             <li><Link to="/projetos"><FontAwesomeIcon icon={faCode} size="lg" /></Link></li>
-            <li><a href="/skill"><FontAwesomeIcon icon={faCog} size="lg" /></a></li>
-            <li><a href="/contato"><FontAwesomeIcon icon={faEnvelope} size="lg"/></a></li>
+            <li><Link to="/skill"><FontAwesomeIcon icon={faCog} size="lg" /></Link></li>
+            <li><Link to="/contato"><FontAwesomeIcon icon={faEnvelope} size="lg"/></Link></li>
         </ul>
         <ul className="linksexternos">
           <li><a href="https://www.instagram.com/marsolinha_/"><FontAwesomeIcon icon={faInstagram} size="sm" /></a></li>
