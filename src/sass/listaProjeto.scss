@@ -61,7 +61,8 @@
     .listaProjeto{
         display: flex;
         flex: 1;
-        margin: 0 30%;
+        height: auto;
+        margin: 0 auto;
         border-radius: unset;
         -webkit-animation: pause;
         -moz-animation: pause;
@@ -69,7 +70,7 @@
         -o-animation: pause;
         animation: pause;
         align-items: center;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
     }
     .itemProjetos{
         -webkit-animation: pause;
@@ -106,7 +107,6 @@
 @media only screen and ( max-width: $mobile ){
     .tituloProjeto{
         position: relative;
-        margin: 40% 0 15% 0;
         left: 50%;
         transform: translate(-50%, -50%);
     }
