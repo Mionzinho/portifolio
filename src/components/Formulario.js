@@ -7,7 +7,7 @@ export default () => {
   
   return ( 
     <>    
-      <div className="container-start">
+      <div className="formulario">
         <ul>
           {formulario.map(form => (
           <>

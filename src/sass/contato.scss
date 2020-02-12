@@ -1,5 +1,7 @@
 
 .conteudo-contato{
+    display: flex;
+    flex-direction: column;
     margin: 5% 0 0 15%;
 }
 
@@ -12,8 +14,8 @@
     width: 250px;
     height: 250px;
     object-fit: cover;
-    flex:1;
     display:flex;
+    flex:1;
     flex-wrap: wrap;
 }
 
@@ -26,7 +28,10 @@
 }
 
 form{
+    display: flex;
     margin:1% 0 0 0;
+    flex: 1 1;
+    flex-wrap: wrap;
 }
 
 input{
@@ -68,7 +73,21 @@ textarea:focus{
 
 
 @media only screen and ( max-width: $mobile ){
+    .formulario{
+        display: flex;
+        text-align: center;
+    }
     .conteudo-contato{
-        margin: 50% 5%;
+        margin: 40% 5%;
+    }
+    form{
+        justify-content: center;
+    }
+    input{
+        max-width: 280px;
+    }
+
+    textarea{
+        max-width: 280px;
     }
 }

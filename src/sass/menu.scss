@@ -61,6 +61,7 @@ ul + ul{
     nav{
         position: absolute;
         display: flex;
+        flex:1 1;
         flex-direction: row;
         align-items: center;
         width: 100%;
