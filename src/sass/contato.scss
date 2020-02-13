@@ -15,7 +15,6 @@
     height: 250px;
     object-fit: cover;
     display:flex;
-    flex:1;
     flex-wrap: wrap;
 }
 
@@ -28,7 +27,6 @@
 }
 
 form{
-    display: flex;
     margin:1% 0 0 0;
     flex: 1 1;
     flex-wrap: wrap;
@@ -81,6 +79,7 @@ textarea:focus{
         margin: 40% 5%;
     }
     form{
+        display: flex;
         justify-content: center;
     }
     input{
