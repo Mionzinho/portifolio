@@ -35,7 +35,8 @@ form{
 input{
     outline: none !important;
     margin: 30px 0 0 0;
-    width: 400px;
+    max-width: 400px;
+    min-width: 280px;
     border:none;
     border-bottom-color: $cor-texto;
     border-bottom-style: solid;
@@ -51,7 +52,8 @@ input:focus{
 textarea{
     outline: none !important;
     margin: 30px 0 30px 0;
-    width: 400px;
+    max-width: 400px;
+    min-width: 280px;
     border: none;
     background: none;
     border-bottom-color: $cor-texto;

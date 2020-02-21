@@ -1,3 +1,9 @@
+.tituloProjeto{
+    flex-wrap: nowrap;
+    white-space: pre-wrap;
+    margin-left: 9%;
+}
+
 
 .listaProjeto {
     display: flex;
@@ -55,7 +61,6 @@
     .tituloProjeto{
         text-align: center;
         flex: 1 1 ;    
-        margin-left: 2%;
     }
 
     .listaProjeto{
@@ -104,9 +109,18 @@
     }
 }
 
+@media only screen and ( max-width: $tablet ){
+    .listaProjeto{
+        margin: 10% 10% 0 15%;
+    }
+}
+
 @media only screen and ( max-width: $mobile ){
     .tituloProjeto{
         position: relative;
     }
 
+    .listaProjeto{
+        margin: 10% 2% 0 2%;
+    }
 }

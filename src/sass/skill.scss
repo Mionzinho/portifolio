@@ -3,13 +3,15 @@
         position: absolute;
         display: flex;
         flex-wrap: wrap;
+        margin: 15% 5% 0 25%;
+        align-self: auto;
+        white-space: pre-wrap;
+
     }
 }
 @media only screen and ( max-width: $mobile ){
     .tituloSkill{
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
+        align-self: center;
         text-align: center;
         margin: -40% 0 0 5%;
     }

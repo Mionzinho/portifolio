@@ -8,6 +8,9 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
+	@media only screen and ( max-width: $mobile ){
+		width: auto;
+	}
 }
 
 .container-column{
@@ -18,12 +21,18 @@
 	align-items: stretch;
 	flex-wrap: wrap;
 	position: relative;
+	
+	@media only screen and ( max-width: $mobile ){
+		position: absolute;
+	}
 }
 
 .flex-row{
 	display: flex;
 	flex-direction:row;
 }
+
+
 	@media only screen and ( max-width: $tablet ){
 		.flex-row{
 			flex-direction: column;
