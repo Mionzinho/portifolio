@@ -1,96 +1,91 @@
 nav{
-    display: flex;
-    flex-wrap: wrap; 
-    width: 90px;
+    min-width: 90px;
     background: $cor-nav;
     position: fixed;
-    height: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
 
-    img{
-        margin: 0 0 0 20px;
+    div {
+        margin: 0 auto;
+        img {
+            height: 10vh;
+            flex-grow: 1;
+        }
     }
 
-    :hover{
+    :hover {
         color:$cor-principal;
     } 
 }
 
 
-.linksinternos{
-    display: block;
-    text-align: center;
-    position: absolute;
-    height: 210px;
-    top: 55%;
-    margin-top: -120px;
+.linksinternos {
     width: 100%;
+    
+    li{
+        a{
+            height: 40vh;
+             color: $cor-texto;
+        }
+    }
 
-    a {
-       color: $cor-texto;
-   }
     li+li {
-       margin: 40%;
+      margin: 30px 0 0 0 ;  
    } 
 }
 
-.linksexternos{
-    position: absolute;
-    bottom: 20px;
+.linksexternos {
+    margin-bottom: 6px;
     width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    right: -5%;
     
-     a {
+    a {
         color: $cor-texto;
     }
-     li + li{
-        top: 12%;
+    li + li{
+        top: 20px;
     }
 }
 
-ul + ul{
-    padding: auto;
-    margin: 40% 0 0 0;
-}
 
-@media only screen and (max-width: $mobile), screen and (max-height: $mobile)  {
-    nav{
+@media only screen and (max-width: $mobile), screen and (max-height: $tablet) {
+    nav {
         position: absolute;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+
         display: flex;
         flex:1 1;
         flex-direction: row;
         align-items: center;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
         
         ul li {
             margin: 0 5% 0 5%
         }
 
     }
-    .linksinternos{
+    .linksinternos {
         height: auto;
+        top: none;
+        margin-top: auto;
+        margin-left: 5%;
+        width: 95%;   
+        
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        top: none;
-        margin-top: auto;
         justify-content: center;     
-        margin-left: 5%;
-        width: 95%;   
+
         li+li{
             margin: 0 5% 0 5%;
         }
-
-
     }
-    .linksexternos{
+    
+    .linksexternos {
         display: none;
     }
 }

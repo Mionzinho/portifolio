@@ -9,10 +9,10 @@ export default function home() {
   return (
     <>
       <div className="container">
-        <Menu></Menu>
-        <Ola></Ola> 
-        <SouWeb></SouWeb>
-      </div> 
+        <Menu/>
+        <Ola/> 
+        <SouWeb/>
+      </div>
     </>
     )
 }

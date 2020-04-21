@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom'
 export default function Menu() {
     return (
       <nav>
-        <a href="/"> <img src={logo} alt="logo"/></a>
-        
+        <div>
+            <img src={logo} alt="logo"/>
+        </div>
         <ul className="linksinternos">
             <li><Link to="/"><FontAwesomeIcon icon={faHome} size="lg" /></Link></li>
             <li><Link to="/projetos"><FontAwesomeIcon icon={faCode} size="lg" /></Link></li>

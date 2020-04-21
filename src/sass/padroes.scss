@@ -11,7 +11,7 @@ $h2-margin: 20% 6% 0 10%;
 $largura: 200px;
 $larguraProjeto: 256px;
 $alturaProjeto: 150px;
-$tablet: 977px;
+$tablet: 768px;
 $mobile: 426px;
 
 
@@ -22,8 +22,9 @@ $mobile: 426px;
 }
 
 %titulo {
-    font: 1000 5vh 'Muli', sans-serif;
+    font: 5vh 'Muli', sans-serif;
     flex: 1 1;
+    font-weight: 900;
     
 
 }

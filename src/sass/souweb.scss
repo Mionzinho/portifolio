@@ -1,26 +1,28 @@
 .souweb{
-    margin: $h2-margin;
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-end;
 
     @media only screen and (max-width: $tablet) {
-        margin: 10% 5% 0% 25%;
       }
 
       @media only screen and (max-width: $mobile) {
-        margin: 20% 0% 2% 10%;  
         flex-wrap: wrap;
     }  
 }
-.souweb a {
-    color: $cor-texto;
-}
-.souweb :hover {
-    color: $cor-principal;
-}
-.souweb p + h3{
-    margin: 30% 0 0 0;
 
+.souweb {
+    position: relative;
+    right: 5%;
+
+    
+    a {
+        color: $cor-texto;
+    }    
+    :hover {
+        color: $cor-principal;
+    }
 }
 .texto{
     @extend %texto;
