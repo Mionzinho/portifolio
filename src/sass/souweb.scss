@@ -1,29 +1,39 @@
 .souweb{
+    position: relative;
+    right: 5%;
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-end;
 
-    @media only screen and (max-width: $tablet) {
-      }
-
-      @media only screen and (max-width: $mobile) {
-        flex-wrap: wrap;
-    }  
-}
-
-.souweb {
-    position: relative;
-    right: 5%;
-
-    
     a {
         color: $cor-texto;
-    }    
-    :hover {
-        color: $cor-principal;
+        :hover{
+            color: $cor-principal;
+        }
+    }  
+
+    @media only screen and (max-width: $tablet ) {
+        margin: 0 auto;
+        right: auto;
+        top: 10%;
+        left: 4%;
+        
+        flex: wrap;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: $mobile ) {
+        top: 5%;
+        left: auto;
+        
+        display: flex;
+        flex-wrap: wrap;
+        white-space: normal;
+        justify-content: center;
     }
 }
+
 .texto{
     @extend %texto;
 }

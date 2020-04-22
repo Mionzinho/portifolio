@@ -1,0 +1,12 @@
+@media only screen and ( max-width: $tablet ){
+    .home{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

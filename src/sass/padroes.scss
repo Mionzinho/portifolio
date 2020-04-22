@@ -11,7 +11,7 @@ $h2-margin: 20% 6% 0 10%;
 $largura: 200px;
 $larguraProjeto: 256px;
 $alturaProjeto: 150px;
-$tablet: 768px;
+$tablet: 965px;
 $mobile: 426px;
 
 
@@ -42,7 +42,6 @@ $mobile: 426px;
 *img{
     display: flex;
 }
-
 
 @media only screen and ( max-width: $tablet ){
     .titulo-alternativo{

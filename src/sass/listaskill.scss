@@ -1,64 +1,30 @@
-.itemskills {
-    width: $largura;
-    height: 80px;
-    position: absolute;
-    -webkit-animation: rotating 20s reverse linear infinite;
-    -moz-animation: rotating 20s reverse linear infinite;
-    -ms-animation: rotating 20s reverse linear infinite;
-    -o-animation: rotating 20s reverse linear infinite;
-    animation: rotating 20s reverse linear infinite;
+#ProgressBar {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 4px;
+    margin: 0 auto;
+  }
+  
+  #Progress {
+    width: 50%;
+    background-color: #4A90E2;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: #4A90E2;
     
-    &:nth-child(1) {
-        top: 8.3%;
-        margin-top: -40px;
-        right: 0px;
-        margin-left: $largura/-2;
-    }
-    &:nth-child(2) {
-        right: 0;
-        top: 50%;
-        margin-top: -40px;
-        margin-right: $largura/-2;
-    }
-    &:nth-child(3) {
-        bottom: -8.3%;
-        right: 0px;
-        margin-left: $largura/-2;
-    }
-    &:nth-child(4) {
-        left: -0px;
-        bottom: -8.3%;
-        margin-top: -40px;
-        margin-right: $largura/-2;
-    }
-    &:nth-child(5) {
-        left: 0;
-        top: 50%;
-        margin-top: -40px;
-        margin-left: $largura/-2;
-    }
-    &:nth-child(6) {
-        top: 8.3%;
-        margin-top: -40px;
-        left:0px;
-        margin-right: $largura/-2;
+    animation-name: progressBar;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 10%;
     }
     
-    span{
-        color:$cor-texto;
-        @extend %texto; 
-        font-size: 22px;
-        position: relative;
-        left: 5px;
-        bottom: 25px; 
-
-        &:hover{
-            color:$cor-principal;
-        }
+    100% {
+      width: 50%;
     }
-    img {
-        width: 60px;
-        height: 80px;
-    }
-
-}
+  }

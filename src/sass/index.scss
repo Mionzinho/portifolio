@@ -9,8 +9,7 @@
 @import'./contato.scss';
 @import'./listaRoleta.scss';
 @import'./listaProjeto.scss';
-
-
+@import'./home.scss';
 
 
 body{
@@ -27,6 +26,11 @@ body{
 
 .container p+button{
     margin:30px 0 0 0;
+}
+
+* :hover{
+    transition: color 200ms ease-in 0.00001s;
+    
 }
 
 button{

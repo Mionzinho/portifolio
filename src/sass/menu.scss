@@ -1,5 +1,12 @@
+.on{
+    color:$cor-principal
+}
+.off{
+    color: aliceblue;
+}
+
 nav{
-    min-width: 90px;
+    min-width: 10vh;
     background: $cor-nav;
     position: fixed;
     height: 100vh;
@@ -18,6 +25,7 @@ nav{
     }
 
     :hover {
+        transition: color 200ms ease-in 0.01s;
         color:$cor-principal;
     } 
 }
@@ -25,9 +33,11 @@ nav{
 
 .linksinternos {
     width: 100%;
-    
+    margin-top: auto;
+
     li{
         a{
+            width: 100%;
             height: 40vh;
              color: $cor-texto;
         }
@@ -39,7 +49,7 @@ nav{
 }
 
 .linksexternos {
-    margin-bottom: 6px;
+    margin-top: auto;
     width: 100%;
     
     a {
@@ -51,41 +61,61 @@ nav{
 }
 
 
-@media only screen and (max-width: $mobile), screen and (max-height: $tablet) {
+@media screen and (max-width: $tablet) {
+    nav{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: $mobile) {
     nav {
-        position: absolute;
-        width: 100%;
-        height: auto;
+      bottom: 0;
+      width: 100%;
+      height: 5rem;
+
+      flex-direction: row;
+
+      div{
+          display: none;
+      }
+    }
+    .linksinternos{
         margin: 0 auto;
+        width: 100%;
 
         display: flex;
-        flex:1 1;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         
-        ul li {
-            margin: 0 5% 0 5%
-        }
+        li {
+            width: 100%;
+            height: 100%;
 
-    }
-    .linksinternos {
-        height: auto;
-        top: none;
-        margin-top: auto;
-        margin-left: 5%;
-        width: 95%;   
-        
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;     
+            display: flex;
+            align-items: center;
+
+            a {
+                height: auto;
+            }
+        }
 
         li+li{
-            margin: 0 5% 0 5%;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+
+
+            :hover{
+                opacity: 0.1;
+            }
         }
+        
     }
-    
-    .linksexternos {
+    .linksexternos{
         display: none;
     }
 }

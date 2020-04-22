@@ -1,7 +1,7 @@
 .ola{
     white-space: nowrap;
     position: relative;
-    left: 13%;
+    left: 7%;
     h2 {
         color:$cor-texto;
         @extend %titulo;
@@ -21,12 +21,22 @@
 
 @media only screen and (max-width: $tablet) {
     .ola{
+        margin: 0 auto;
+        
         flex-wrap: wrap;
         white-space: wrap;
     }
 }
 @media only screen and (max-width: $mobile) {
     .ola{
-        justify-content: flex-start;
+        bottom: 15%;
+        left: auto;
+        text-align: center;
+        white-space: normal;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
