@@ -3,17 +3,23 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .itemSkill{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 10px solid $cor-subtexto;
-  border-radius: 80px;
+  border-radius: 60px;
   position: relative;
+  margin: auto;
+  margin-top: 0.5em;
+}
 
-  margin-top: 5%;
+.skillTxt{
+  @extend %texto;
+  font-size:18px;
+  margin: 5px auto;
 }
 .wrapper {
   width: 100px; /* Set the size of the progress bar */
@@ -25,17 +31,17 @@
 }
 /* Set the sizes of the elements that make up the progress bar */
 .circle {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 10px solid $cor-principal;
-  border-radius: 50px;
+  border-radius: 60px;
   position: absolute;
   clip: rect(0px, 50px, 100px, 0px);
 }
 
 .txtSkill{
   margin: 0 auto;
-  color: wheat;
+  color: $cor-subtexto;
   text-align: center;
 }
 /* Using the data attributes for the animation selectors. */
@@ -56,6 +62,12 @@ div[data-anim~=base] {
   animation-duration: 0.5s; /* Full animation time */
   animation-delay: 1s;
   animation-name: left-spin;
+
+}
+.circle[data-anim~=left60] {
+  animation-duration: 0.5s; /* Full animation time */
+  animation-delay: 1s;
+  animation-name: deg60;
 
 }
 
@@ -82,9 +94,23 @@ div[data-anim~=base] {
     transform: rotate(270deg);
   }
 }
+@keyframes deg60{
+ from {
+   transform: rotate(180deg);
+ }
+ to {
+   transform: rotate(210deg);
+ }
+}
 /* Set the wrapper clip to auto, effectively removing the clip */
 @keyframes close-wrapper {
   to {
     clip: rect(auto, auto, auto, auto);
+  }
+}
+
+@media only screen and ( max-width: $mobile ){
+  .ListaSkill{
+
   }
 }

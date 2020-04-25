@@ -1,20 +1,12 @@
-@media only screen and ( max-width: $tablet ){
     .tituloSkill{
         position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 15% 5% 0 25%;
-        align-self: auto;
-        white-space: pre-wrap;
+         top: 0;
+         left: 0;
+         bottom: 0;
+          right: 0;
+          z-index: -1;
+         overflow: hidden;
 
     }
-}
-@media only screen and ( max-width: $mobile ){
-    .tituloSkill{
-        align-self: center;
-        text-align: center;
-        margin: -40% 0 0 5%;
-    }
-}
 
 
