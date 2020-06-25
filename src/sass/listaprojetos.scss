@@ -1,0 +1,207 @@
+/* Variables */
+$ferri_duration: 15s;
+$color-1: #ccc;
+$color-2: #fff;
+
+// Rotate Wheel Animation
+@keyframes ferri-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cabin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+html {
+  font-size: 6px; // base font-size for rem value
+
+  // Example media queries only, you may need to adjust more to fit as per your required.
+  @media (min-width: 768px) {
+    font-size: 6px;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 10px;
+  }
+}
+
+.ferris-wrapper {
+  position: relative;
+  width: 80rem;
+  height: 90rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hub-front {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 50%;
+  border: 0.1rem solid darken($color-1, 50%);
+  z-index: 4;
+  width: 3rem;
+  height: 3rem;
+  background-color: darken($cor-principal, 10%);
+  border: 0.5rem solid $cor-fundo;
+}
+
+.wheel-wrapper {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 3;
+}
+.wheel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+
+  // Rotate Wheel
+  animation: ferri-wheel $ferri_duration linear infinite;
+}
+
+.line {
+  position: absolute;
+  width: 50%;
+  height: 0.1rem;
+  left: 50%;
+  top: 50%;
+  background-color: darken($cor-principal, 40%);
+  transform-origin: 0% 0%;
+
+  &:nth-of-type(1) {
+    transform: rotate(90deg);
+  }
+
+  &:nth-of-type(2) {
+    transform: rotate(180deg);
+  }
+
+  &:nth-of-type(3) {
+    transform: rotate(270deg);
+  }
+
+  &:nth-of-type(4) {
+    transform: rotate(360deg);
+  }
+}
+
+.cabin {
+  width: 30rem;
+  height: 16rem;
+  position: absolute;
+  transform-origin: 50% 0%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 16rem;
+  opacity: 1;
+  border-radius: 0.2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  
+  & img {
+    width: 30rem;
+    height: 16rem;
+    object-fit: cover;
+  }
+
+  &:before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 50%;
+    top:-1rem;
+    background: $cor-principal;
+    border-radius:50% 50% 25% 25%; 
+    transform: translate3d(-50%, 0, 0);
+  }
+  // Apply animation
+  animation: cabin $ferri_duration linear infinite;
+
+  &.first {
+    right: -30.5%;
+    top: 50%;
+  }
+  &.second {
+    right: 19.8%;
+    bottom: -32.5%;
+  }
+  &.third {
+    left: 19.8%;
+    top: 0.5;
+  }
+  &.forth {
+    left: -30.5%;
+    top: 50%;
+  }
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;bottom: 0;
+  left: 0;right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $cor-principal;
+
+    span {
+      color: $color-2;
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity:1;
+      
+      @extend %titulo;
+      font-weight: 500 ;
+      
+    }
+    &:hover {
+      opacity: .8;
+    }
+}
+
+@media only screen and (max-width:$mobile) {
+  .ferris-wrapper {
+    width: inherit;
+    height: 100vh;
+    left: 0;
+  }
+  .hub-front {
+    display: none;
+  }
+  .wheel-wrapper {
+    left: 0;
+    top: 40%;
+  }
+  .line {
+    display:none;
+  }
+}

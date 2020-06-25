@@ -5,16 +5,14 @@ import { bounce } from 'react-animations'
 
 const Bounce = styled.div`animation:2s ${keyframes`${bounce}`} `
 
-const c = () => {
-    return (
-        <div className="ola">
-          <Bounce><h2>Olá,<br/>Sou <span className="titulo-destaque">Vinicius</span>,<br/>Front-end Web developer.</h2></Bounce>
-          <p className="subtitulo">HTML5 & CSS3 / JS / entre outros...</p>
-          <br/>
-          <Botao></Botao>
-        </div>
-      )
-  }
-  
-  export default c
-  
+export default function ola() {
+  return (
+    <div className="ola">
+      <Bounce><h2>Olá,<br />Sou <span className="titulo-destaque">Vinicius</span>,<br />Front-end Web developer.</h2></Bounce>
+      <p className="subtitulo">HTML5 & CSS3 / JS / entre outros...</p>
+      <br />
+      <Botao />
+    </div>
+  )
+}
+

@@ -1,20 +1,19 @@
 @import './reset.scss';
 @import './padroes.scss';
 @import './menu.scss';
-@import './grid.scss';
+@import './containers.scss';
 @import './ola.scss';
 @import './souweb.scss';
 @import'./skill.scss';
 @import'./listaskill.scss';
 @import'./contato.scss';
-@import'./listaRoleta.scss';
-@import'./listaProjeto.scss';
+@import'./listaprojetos.scss';
 @import'./home.scss';
-
+@import'./projetos.scss';
 
 body{
     background: $cor-fundo;
-    background-image: url("../img/fundo.png");
+    background-image: url("../assets/fundo.png");
     background-repeat: no-repeat;
     background-position:150% 30%;
     background-size: 65%;

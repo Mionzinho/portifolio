@@ -1,4 +1,4 @@
-.ListaSkill{
+.lista-skill{
   margin: 0 auto;
 
   display: flex;
@@ -49,7 +49,7 @@
 div[data-anim~=base] {
   animation-iteration-count: 1;  /* Only run once */
   animation-fill-mode: forwards; /* Hold the last keyframe */
-  animation-timing-function:linear; /* Linear animation */
+  animation-timing-function: linear; /* Linear animation */
 }
 
 .wrapper[data-anim~=wrapper] {
@@ -65,8 +65,8 @@ div[data-anim~=base] {
 
 }
 .circle[data-anim~=left60] {
-  animation-duration: 0.5s; /* Full animation time */
-  animation-delay: 1s;
+  animation-duration: 1s; /* Full animation time */
+  animation-delay: 0.9s;
   animation-name: deg60;
 
 }
@@ -106,11 +106,5 @@ div[data-anim~=base] {
 @keyframes close-wrapper {
   to {
     clip: rect(auto, auto, auto, auto);
-  }
-}
-
-@media only screen and ( max-width: $mobile ){
-  .ListaSkill{
-
   }
 }

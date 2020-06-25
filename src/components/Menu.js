@@ -1,34 +1,26 @@
-import React, { useState } from 'react'
-import logo from '../img/logo.png'
-import { faHome, faCode, faCog, faEnvelope} from "@fortawesome/free-solid-svg-icons"
-import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from 'react'
+import logo from '../assets/logo.png'
+import { FaHome, FaCode, FaCog, FaEnvelope, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 export default function Menu() {
 
-  const [color, setcolor] = useState(false)
-  const trocaCor = () =>{
-    setcolor(!color)
-    console.log(color)
-  }
-
-    return (
-      <nav>
-        <div>
-            <img src={logo} alt="logo"/>
-        </div>
-        <ul className="linksinternos">
-            <li onClick={trocaCor}><Link to="/" className={color ? 'on' : 'of'}><FontAwesomeIcon icon={faHome} size="lg" /></Link></li>
-            <li><Link to="/projetos"><FontAwesomeIcon icon={faCode} size="lg" /></Link></li>
-            <li><Link to="/skill"><FontAwesomeIcon icon={faCog} size="lg" /></Link></li>
-            <li><Link to="/contato"><FontAwesomeIcon icon={faEnvelope} size="lg"/></Link></li>
-        </ul>
-        <ul className="linksexternos">
-          <li><a href="https://www.instagram.com/marsolinha_/"><FontAwesomeIcon icon={faInstagram} size="sm" /></a></li>
-          <li><a href="https://www.linkedin.com/in/vinicius-marsola-685154195/"><FontAwesomeIcon icon={faLinkedin} size="sm" /></a></li>
-          <li><a href="https://github.com/Mionzinho"><FontAwesomeIcon icon={faGithub} size="sm" /></a></li>    
-        </ul>
-      </nav>
-    )
+  return (
+    <nav>
+      <div>
+        <img src={logo} alt="logo" />
+      </div>
+      <ul className="links-internos">
+        <li><Link to="/" ><FaHome /></Link></li>
+        <li><Link to="/projetos"><FaCode /></Link></li>
+        <li><Link to="/skill"><FaCog /></Link></li>
+        <li><Link to="/contato"><FaEnvelope /></Link></li>
+      </ul>
+      <ul className="links-externos">
+        <li><a href="https://www.instagram.com/marsolinha_/" target="blank"><FaInstagram /></a></li>
+        <li><a href="https://www.linkedin.com/in/vinicius-marsola-685154195/" target="blank"><FaLinkedin /></a></li>
+        <li><a href="https://github.com/Mionzinho" target="blank"><FaGithub /></a></li>
+      </ul>
+    </nav>
+  )
 }

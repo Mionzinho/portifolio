@@ -1,17 +1,14 @@
-  
+
 import React from 'react'
 import Menu from '../components/Menu'
-import Listaskill from '../components/Listaskill'
+import ListaSkill from '../components/ListaSkill'
 
-
-export default () => {
+export default function skill() {
 
   return (
-    <>
-      <div className="container">
-        <Listaskill/>
-        <Menu/>
-      </div> 
-    </>
-    )
+    <div className="container">
+      <Menu />
+      <ListaSkill />
+    </div>
+  )
 }
